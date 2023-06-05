@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: yellow;
+}
+.title{
+	text-align: center;
+	margin-top: 100px;
+}
+.menu{
+	position: absolute;*/
+	float: right;
+	right: 0;/*O TOP: 0 E O RIGHT: 0 SERVEM PARA ALINHAR A DIV NO CANTO SUPERIOR DIREITO*/
+	top: 0;
+}
+li{
+	display: inline-block;
+	margin-right: 20PX;
+
+}
+.links{
+	text-decoration: none;
+	color: inherit;
+}
