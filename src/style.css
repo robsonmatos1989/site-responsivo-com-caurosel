@@ -4,9 +4,9 @@ body{
 	background-color: yellow;
 	width: 100%;
 	height: 100vh;
-	display: flex;
+	/*display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 }
 .title{
 	text-align: center;
@@ -18,6 +18,14 @@ body{
 	right: 0;/*O TOP: 0 E O RIGHT: 0 SERVEM PARA ALINHAR A DIV NO CANTO SUPERIOR DIREITO*/
 	top: 0;
 }
+#technology{
+	text-align: center;
+	margin-top: 1000px;
+}
+#fortune{
+	text-align: center;
+	margin-top: 1500px;
+}
 li{
 	display: inline-block;
 	margin-right: 20PX;
@@ -27,42 +35,110 @@ li{
 	text-decoration: none;
 	color: inherit; /*inherit serve para não deixar o link marcado como visto*/
 }
-.slider{
-	margin: 0 auto;
-	width: 800px;
-	height: 400px;
-	overflow: hidden;
+.links:hover{
+	background-color: DarkSalmon;/*para fazer a transição nos links apenas quando passar o cursor por cima*/
+	border: black solid;
+	border-radius: 5px;
 }
-.slides{
-	width: 400%;*/
-	height: 400px;
-	display: flex;*/
+
+footer{
+	text-align: right;
+  	padding: 3px;
+  	background-color: DarkSalmon;
+  	color: white;
+  	margin-top: 100%;
 }
-.slides input{
+.dev{
+	margin-right: 20px;
+}
+
+
+.dropdown{/*aqui eu configuro para que fique oculto o menu para portáteis até que
+atenda a condição do media query*/
 	display: none;
 }
 
-.slide{
-	width: 25%;
-	position: relative;
+
+@media screen and (max-width: 700px){
+	/*aqui em .menu{} eu deixei a condição de que o menu desaparecerá quando a máxima
+	largura da tela for de 700px*/
+	.menu{
+		display: none;
+	}
+	body{
+		background-color: green;
+	}
+	li{
+		display: block;
+	}
+	
+
+
 }
-.slide img{
-	width: 800px;
+@media screen and (max-width: 700px){	
+	/*aqui em .menu-portable{} eu deixei a condição de que o menu portátil aparecerá quando a máxima
+	mínima largura da tela for de 700px*/
+	/*.menu-portable{
+		display: none;
+	}*/
+
+
+
+	.dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	  position: absolute;
+	  display: inline-block;
+	  right: 0;
+	  top: 0;
+
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {
+	  background-color: #3e8e41;
+	}
+
+
 }
-.manual-navigation{
-	position: absolute;
-	width: 800px;
-	margin-top: -40px;
-	display: flex;
-	justify-content: center;
-}
-.manual-btn{
-	border: 2px solid white;
-	padding: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 1s;
-}
-.manual-btn:not(:last-child){
-	margin-right: 40px;
-}
+
+	
+
+
+
+

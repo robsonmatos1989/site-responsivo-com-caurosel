@@ -16,50 +16,38 @@
 		<div class="menu">
 			<ul>
 				<li><a class="links" href="index.html"> Home</a></li>
-				<li>Tecnologias</li>
-				<li>Fortunas</li>
+				<li><a class="links" href="#technology"> Tecnologias</a></li>	
+				<li><a class="links" href="#fortune"> Fortunas</a></li>		
+				
 			</ul>	
 		</div>
 
-		<div class="slider">
-			
-			<div class="slides">
-				<!--Aqui são os Radio Buttons-->
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<input type="radio" name="radio-btn" id="radio4">
-				<!--Aqui é o final do Radio Buttons-->
-			</div>
+		
 
-			<div class="slide first">
-				<img src="images/foto1.jpg" alt="Imagem1">
-			</div>	
-			<div class="slide">
-				<img src="images/foto2.jpg" alt="Imagem2">
-			</div>	
-			<div class="slide">	
-				<img src="images/foto3.jpg" alt="Imagem3">
-			</div>	
-			
-			<div class="navigation-auto">
-				<div class="auto-btn1"></div>
-				<div class="auto-btn2"></div>
-				<div class="auto-btn3"></div>
-			</div>
+		</header>
 
+		<!--Esse menu só irá aparecer quando atender às condições do media query-->
+		
+		<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<div class="dropdown-content">
+					<a href="index.html"> Home</a>
+					<a href="#technology"> Tecnologias</a>
+					<a href="#fortune"> Fortunas</a>
+				</div>
+					
 		</div>
-
-
-		<div class="manual-navigation">
-			<label for="radio1"></label>
-			<label for="radio2"></label>
-			<label for="radio3"></label>
-		</div>	
-
+		<!--FIM-->
 
 	<script src="src/script.js"></script>	
-	</header>
+	<h1 id="technology">Tecnologias</h1>
+	<h1 id="fortune">Fortunas</h1>
 
+	
+	<footer >		
+		<div class="dev">
+			<h4>Desenvolvedor: Robson Matos</h4>
+		</div>	
+	</footer>
 </body>
 </html>
