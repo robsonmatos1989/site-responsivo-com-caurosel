@@ -39,6 +39,7 @@ li{
 	background-color: DarkSalmon;/*para fazer a transição nos links apenas quando passar o cursor por cima*/
 	border: black solid;
 	border-radius: 5px;
+	
 }
 
 footer{
@@ -139,6 +140,23 @@ atenda a condição do media query*/
 
 	
 
+/*esse trecho é voltado para o carousel*/
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
 
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+}
 
