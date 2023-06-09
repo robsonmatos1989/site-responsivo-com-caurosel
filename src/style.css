@@ -142,21 +142,60 @@ atenda a condição do media query*/
 
 /*esse trecho é voltado para o carousel*/
 
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
+.galery {
+    width: 640px;
+    height: 360px;
+    background-color: black;
+    overflow: hidden;
 }
 
-.carousel {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
-.carousel-item {
-  flex: 0 0 100%;
-  max-width: 100%;
-  height: auto;
+.galery .fotos img {
+    width: 19.9%;
 }
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }*/
+}
+
+
+
+
+
+
+
+
+.container { 
+	width: 100%; 
+	height: 100%; 
+	display: grid; 
+	grid-template-rows: 50px auto 50px; 
+}
+
+
+.main { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+}
+
+img{
+	width: 640px;
+  height: 360px;
+}
+
 
