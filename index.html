@@ -2,8 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="src/style.css">
+
 	<title>Site Responsivo</title>
 </head>
 <body>
@@ -14,9 +18,7 @@
 		<div class="menu">
 			<ul>
 				<li><strong><a class="links" href="index.html"> Home</a></strong></li>
-				<li><strong><a class="links" href="#technology"> AI</a></strong></li>	
-				<li><strong><a class="links" href="#fortune"> Fortunas</a></strong></li>		
-				
+				<li><strong><a class="links" href="#first-title"> AI</a></strong></li>										
 			</ul>	
 		</div>
 
@@ -25,7 +27,7 @@
 		</header>
 
 		<div class="title">
-			<h1>Principais nomes da tecnologia em 2023</h1>	
+			<h1><em>A little about artificial intelligence, by Bill Gates:</em></h1>	
 		</div>
 		<!--Esse menu só irá aparecer quando atender às condições do media query-->
 		
@@ -33,31 +35,48 @@
 				<button class="dropbtn">MENU</button>
 				<div class="dropdown-content">
 					<a href="index.html"> Home</a>
-					<a href="#technology"> The Age of AI</a>
-					<a href="#fortune"> Fortunas</a>
+					<a href="#first-title"> AI</a>					
 				</div>
 					
 		</div>
 		<!--FIM-->
 
 		<!--PARTE REFERENTE AO CAROUSEL-->
-		<main class="main">
+		
+   
 
-            <section class="galery">
-                <div class="fotos">
-                    <img src="./images/foto1.jpg" alt="Foto 1">
-                    <img src="./images/foto2.jpg" alt="Foto 2">
-                    <img src="./images/foto3.jpg" alt="Foto 3">                    
-                </div>
-            </section>
-
-        </main>
+  <div id="carouselExampleIndicators" class="carousel slide">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="./images/foto1.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="./images/foto2.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="./images/foto3.jpg" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
 		<!--FIM CAROUSEL-->
 	
 
 
 	<script src="src/script.js"></script>	
-	<h1 id="technology">The Age of AI</h1>
+	<h1 id="first-title"><strong>The Age of AI</strong></h1>
 	<p>In my lifetime, I’ve seen two demonstrations of technology that struck me as revolutionary.
 
 The first time was in 1980, when I was introduced to a graphical user interface—the forerunner of every modern operating system, including Windows. I sat with the person who had shown me the demo, a brilliant programmer named Charles Simonyi, and we immediately started brainstorming about all the things we could do with such a user-friendly approach to computing. Charles eventually joined Microsoft, Windows became the backbone of Microsoft, and the thinking we did after that demo helped set the company’s agenda for the next 15 years.
@@ -86,14 +105,27 @@ Climate change is another issue where I’m convinced AI can make the world more
 
 In short, I'm excited about the impact that AI will have on issues that the Gates Foundation works on, and the foundation will have much more to say about AI in the coming months. The world needs to make sure that everyone—and not just people who are well-off—benefits from artificial intelligence. Governments and philanthropy will need to play a major role in ensuring that it reduces inequity and doesn’t contribute to it. This is the priority for my own work related to AI.  
 
-Any new technology that’s so disruptive is bound to make people uneasy, and that’s certainly true with artificial intelligence. I understand why—it raises hard questions about the workforce, the legal system, privacy, bias, and more. AIs also make factual mistakes and experience hallucinations. Before I suggest some ways to mitigate the risks, I’ll define what I mean by AI, and I’ll go into more detail about some of the ways in which it will help empower people at work, save lives, and improve education.    <strong>Fonte:  <a id="link-gates" href="https://www.gatesnotes.com/The-Age-of-AI-Has-Begun">GatesNotes </a></strong>  </p>
-	<h1 id="fortune">Fortunas</h1>
-
+Any new technology that’s so disruptive is bound to make people uneasy, and that’s certainly true with artificial intelligence. I understand why—it raises hard questions about the workforce, the legal system, privacy, bias, and more. AIs also make factual mistakes and experience hallucinations. Before I suggest some ways to mitigate the risks, I’ll define what I mean by AI, and I’ll go into more detail about some of the ways in which it will help empower people at work, save lives, and improve education.    
 	
-	<footer >		
+	<h1><strong>I’ve been thinking a lot about how AI can reduce some of the world’s worst inequities.</strong></h1>
+	<p>In the United States, the best opportunity for reducing inequity is to improve education, particularly making sure that students succeed at math. The evidence shows that having basic math skills sets students up for success, no matter what career they choose. But achievement in math is going down across the country, especially for Black, Latino, and low-income students. AI can help turn that trend around.
+
+Climate change is another issue where I’m convinced AI can make the world more equitable. The injustice of climate change is that the people who are suffering the most—the world’s poorest—are also the ones who did the least to contribute to the problem. I’m still thinking and learning about how AI can help, but later in this post I’ll suggest a few areas with a lot of potential.
+
+In short, I'm excited about the impact that AI will have on issues that the Gates Foundation works on, and the foundation will have much more to say about AI in the coming months. The world needs to make sure that everyone—and not just people who are well-off—benefits from artificial intelligence. Governments and philanthropy will need to play a major role in ensuring that it reduces inequity and doesn’t contribute to it. This is the priority for my own work related to AI.  
+
+Any new technology that’s so disruptive is bound to make people uneasy, and that’s certainly true with artificial intelligence. I understand why—it raises hard questions about the workforce, the legal system, privacy, bias, and more. AIs also make factual mistakes and experience hallucinations. Before I suggest some ways to mitigate the risks, I’ll define what I mean by AI, and I’ll go into more detail about some of the ways in which it will help empower people at work, save lives, and improve education.</p>
+
+<strong class="font">Fonte:  <a id="link-gates" href="https://www.gatesnotes.com/The-Age-of-AI-Has-Begun">GatesNotes </a></strong>  </p>
+	
+	<footer class="rodape">		
 		<div class="dev">
-			<h4>Desenvolvedor: Robson Matos</h4>
+			<h4>Developer: Robson Matos</h4>
 		</div>	
 	</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
 </body>
 </html>

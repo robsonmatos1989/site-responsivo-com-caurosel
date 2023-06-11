@@ -1,27 +1,26 @@
 body{
-	margin: 0;
-	padding: 0;	
-	/*background-color: yellow;*/
-	width: 100%;
-	height: 100vh;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+	font-family: "Times New Roman", Times, serif;
 }
 
 .title{
 	text-align: center;
 	margin-top: 100px;
+	font-family: "Times New Roman", Times, serif;
+	margin-bottom: 100px;
+}
+#first-title{
+	margin-top: 150px;
 }
 .menu{
 	position: absolute;*/
 	float: right;
 	right: 0;/*O TOP: 0 E O RIGHT: 0 SERVEM PARA ALINHAR A DIV NO CANTO SUPERIOR DIREITO*/
 	top: 0;
+	font-family: "Times New Roman", Times, serif;
 }
 #technology{
 	text-align: center;
-	margin-top: 1000px;
+	/*margin-top: 1000px;*/
 }
 #fortune{
 	text-align: center;
@@ -42,30 +41,44 @@ li{
 .links:hover{
 	background-color: DarkSalmon;/*para fazer a transição nos links apenas quando passar o cursor por cima*/
 	border: black solid;
-	border-radius: 5px;
-	
+	border-radius: 5px;	
+}
+.font{
+	margin-left: 20px;
 }
 p{
 	text-align: justify;
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 20px;	
+	font-size: 22px;
 }
-
+h1{
+	margin-left: 20px;
+}
 
 footer{
 		text-align: right;
   	padding: 3px;
   	background-color: DarkSalmon;
   	color: white;
-  	margin-top: 100%;
+  	margin-top: 100%;  	  	
+}
+.rodape{
+	margin-right: 0;
+	margin-left: 0;
 }
 .dev{
 	margin-right: 20px;
 }
+img{
+	width: 300px;
+}
 
 
-.dropdown{/*aqui eu configuro para que fique oculto o menu para portáteis até que
+/*aqui eu configuro para que fique oculto o menu para portáteis até que
 atenda a condição do media query*/
+
+.dropdown{
 	display: none;
 }
 
@@ -77,7 +90,7 @@ atenda a condição do media query*/
 		display: none;
 	}
 	body{
-		background-color: green;
+		background-color: #DEB887;
 	}
 	li{
 		display: block;
@@ -96,7 +109,7 @@ atenda a condição do media query*/
 
 
 	.dropbtn {
-	  background-color: #4CAF50;
+	  background-color: #964B00;
 	  color: white;
 	  padding: 16px;
 	  font-size: 16px;
@@ -118,7 +131,7 @@ atenda a condição do media query*/
 	.dropdown-content {
 	  display: none;
 	  position: absolute;
-	  background-color: #f9f9f9;
+	  background-color: #DEB887;
 	  min-width: 160px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -150,57 +163,11 @@ atenda a condição do media query*/
 
 	
 
-/*esse trecho é voltado para o carousel*/
-
-.galery {
-    width: 640px;
-    height: 360px;
-    background-color: black;
-    overflow: hidden;
-}
-
-.galery .fotos {
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-.galery .fotos img {
-    width: 19.9%;
-}
-
-@keyframes animacao {
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    95% { margin-left: -300%; }
-    100% { margin-left: -400%; }*/
-}
 
 
 
-.container { 
-	width: 100%; 
-	height: 100%; 
-	display: grid; 
-	grid-template-rows: 50px auto 50px; 
-}
 
 
-.main { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-}
 
-img{
-	width: 640px;
-  height: 360px;
-}
 
 
